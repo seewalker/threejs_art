@@ -25,7 +25,7 @@ An interactive animation of the sun's path through the sky where latitude and lo
 
 A hodgepodge of THREE.js features, useful as a example for how to correctly do various computer graphics tasks.
 
-![That sprite is me][images/stills/kitchen_sink.png]
+Sample Image : ![That sprite is me][images/stills/kitchen_sink.png]
 
 ## Template
 

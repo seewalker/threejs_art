@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Basic</title>
+    <style>
+        body { margin : 0;}
+    </style>
+</head>
+
+<body>
+    <!-- I think I want a full menu with only 1 submit button, most of it minimized.-->
+    <form id="screenshot_form" action="#" onsubmit="screenshot();return false">
+    </form>
+    <form id="options_form" action="#" onsubmit="reset_options();return false">
+        <table border=1>
+        <tr>
+        <td>
+            <input type="radio" id="nav_t=free" name="nav_t" value="free" checked>
+            <label for="nav_t=free">Free</label>
+            <input type="radio" id="nav_t=sphere" name="nav_t" value="sphere">
+            <label for="nav_t=sphere">Sphere</label>
+        </td>
+        <td>
+            <input type="radio" id="cam_t=perspective" name="cam_t" value="perspective" checked>
+            <label for="cam_t=perspective">Perspective</label>
+            <input type="radio" id="cam_t=orthographic" name="cam_t" value="orthographic">
+            <label for="cam_t=orthographic">Orthographic</label>
+        </td>
+        <td>
+            <label for="ray_z"> z:</label>
+            <input id="ray_z" type="number" required value="-30">
+        </td>
+        </tr>
+        <tr><button type="submit_options">Submit </button> </tr>
+        <tr>
+            <td>
+            <label for="d_free_r"> Translate Increment:</label>
+            <input id="d_free_r" type="number" required value="1">
+            </td>
+            <td>
+            <label for="d_free_theta"> Rotate Increment:</label>
+            <input id="d_free_theta" type="number" required value="0.05">
+            </td>
+        </tr>
+        </table>
+    </form>
+    <table id="data_display" border=1>
+        <tr>
+            <td>
+                <div id="camera_pos"></div>
+            </td>
+            <td>
+                <div id="camera_direction"></div>
+            </td>
+        </tr>
+    </table>
+    <div id="graphics_notes"> </div>
+    <canvas id="canvas_0" width="1500" height="600"> </canvas>
+    <script src="js/three.js"></script>
+    <script src="basic.js"> </script>
+</body>
+</html>
